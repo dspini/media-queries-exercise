@@ -1,0 +1,124 @@
+* {box-sizing: border-box;}
+* {margin: 0; padding: 0}
+
+h1 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.alert-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: lightgrey 1px solid;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: lightblue;
+}
+
+.alert-info a {
+    text-decoration: none;
+}
+
+.nav-links  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-img {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+section, h2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
+#social-media-links i {
+    font-size: 2.2em;
+}
+
+@media screen and (min-width: 365px) {
+
+    ul {
+        list-style: none;
+    }
+
+    .nav-links li {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 1em;
+        margin: 1em;
+        background-color: lightgrey;
+        width: 95%;
+        flex-direction: column;
+    }
+
+@media screen and (min-width: 934px) {
+        h1 {
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        .header-img {
+            margin-top: 1em;
+        }
+
+        .alert-info {
+            display: none;
+        }
+
+        .main, .sub-section {
+            float: left;
+        }
+
+        .main {
+            width: 65%;
+        }
+
+        .sub-section {
+            width: 35%;
+        }
+
+        .nav-links {
+            flex-direction: row;
+        }
+
+        .nav-links li {
+            flex-direction: row;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin: 1em;
+            width: 95%;
+            float: right;
+        }
+
+        nav {
+            float: right;
+        }
+    }
+}
+
